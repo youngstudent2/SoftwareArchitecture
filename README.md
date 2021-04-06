@@ -72,7 +72,7 @@ setUp(scn.inject(atOnceUsers(500)).protocols(httpProtocol))
 
 主要对首页访问、所有查询和id查询进行测试
 
-测试结果为：
+测试结果为：（看不到图片的话可以尝试用南大校园网访问orz）
 
 **1、单服务器的负载性能**
 
