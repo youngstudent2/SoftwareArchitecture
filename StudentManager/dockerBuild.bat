@@ -1,0 +1,2 @@
+mvn compile jib:dockerBuild --offline & docker stop manager-1-1 manager-1-2 manager-1-3 manager-1-4 & docker rm manager-1-1 manager-1-2 manager-1-3 manager-1-4 & docker run -d --name manager-1-1 --cpus=1 -p 8081:8080 student-manager & docker run -d --name manager-1-2 --cpus=1 -p 8082:8080 student-manager & docker run -d --name manager-1-3 --cpus=1 -p 8083:8080 student-manager & docker run -d --name manager-1-4 --cpus=1 -p 8084:8080 student-manager 
+

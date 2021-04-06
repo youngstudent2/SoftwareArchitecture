@@ -1,0 +1,1 @@
+start start_haproxy & start gatling

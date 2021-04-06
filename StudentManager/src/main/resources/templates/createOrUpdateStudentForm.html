@@ -1,0 +1,29 @@
+<html xmlns:th="https://www.thymeleaf.org">
+
+<body>
+
+  <h2>Student</h2>
+  <form th:object="${student}" class="form-horizontal" id="add-student-form" method="post">
+    <div class="form-group has-feedback">
+      <input
+        th:replace="~{fragments/inputField :: input ('Name', 'name', 'text')}" />
+      <input
+        th:replace="~{fragments/inputField :: input ('Sex', 'sex', 'text')}" />
+      <input
+        th:replace="~{fragments/inputField :: input ('Hometown', 'hometown', 'text')}" />
+      <input
+        th:replace="~{fragments/inputField :: input ('Faculty', 'faculty', 'text')}" />
+      <input
+        th:replace="~{fragments/inputField :: input ('Birthday', 'birthday', 'date')}" />
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button
+          th:with="text=${student['new']} ? 'Add Student' : 'Update Student'"
+          class="btn btn-default" type="submit" th:text="${text}">Add
+          Student</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
