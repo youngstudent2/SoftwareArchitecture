@@ -76,19 +76,19 @@ setUp(scn.inject(atOnceUsers(500)).protocols(httpProtocol))
 
 **1、单服务器的负载性能**
 
-![single](https://git.nju.edu.cn/youngstudent2/mypics/uploads/d8109333947e2a5d57bacf7ee4aadbac/single.png)
+![single](README.assets/single.png)
 
 **2、四服务器（HAProxy扩展）的负载性能**
 
-![withhaproxy](https://git.nju.edu.cn/youngstudent2/mypics/uploads/ac3390aa309cab9a0ceff7968356fc0c/withhaproxy.png)
+![withhaproxy](README.assets/withhaproxy.png)
 
 **3、单服务器+redis服务器的负载性能**
 
-![singleredis](https://git.nju.edu.cn/youngstudent2/mypics/uploads/c2dc254cf97d86d872b6df79ac3fc426/singleredis.png)
+![singleredis](README.assets/singleredis.png)
 
 **4、四服务器（HAPRoxy扩展）+redis服务器的负载性能**
 
-![withhaproxyandredis](https://git.nju.edu.cn/youngstudent2/mypics/uploads/1679a7102001ef2db29504342ddafad2/withhaproxyandredis.png)
+![withhaproxyandredis](README.assets/withhaproxyandredis.png)
 
 
 
